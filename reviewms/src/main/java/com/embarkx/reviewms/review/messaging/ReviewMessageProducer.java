@@ -15,7 +15,7 @@ public class ReviewMessageProducer {
 
     public void sendMessage(Review review){
         ReviewMessage reviewMessage = new ReviewMessage();
-        reviewMessage.setId(reviewMessage.getId());
+        reviewMessage.setId(review.getId());
         reviewMessage.setTitle(review.getTitle());
         reviewMessage.setDescription(review.getDescription());
         reviewMessage.setRating(review.getRating());
