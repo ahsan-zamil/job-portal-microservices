@@ -1,5 +1,3 @@
-
-SERVICE FILE
 apiVersion: v1
 kind: Service
 metadata:
@@ -10,3 +8,4 @@ spec:
   ports:
     - port: 80
       targetPort: 8082
+  type: NodePort

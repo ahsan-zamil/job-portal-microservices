@@ -1,4 +1,3 @@
-DEPLOYMENT FILE
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -7,9 +6,11 @@ metadata:
     app: job
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: job
   template:
     metadata:
-      name: job
       labels:
         app: job
     spec:
@@ -22,7 +23,3 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: k8s
-      restartPolicy: Always
-  selector:
-    matchLabels:
-      app: job

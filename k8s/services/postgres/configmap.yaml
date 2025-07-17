@@ -6,3 +6,4 @@ data:
   POSTGRES_DB: dynamicaz
   POSTGRES_USER: dynamicaz
   POSTGRES_PASSWORD: dynamicaz
+  
