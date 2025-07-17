@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: job
-          image: dcode007/jobms:latest
+          image: dynamicaz/jobms:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8082
